@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Personal";
+}
+
+<h2>Personal</h2>
+
+<div class="wrapper">
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">ID</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            @foreach (var item in ViewBag.model)
+            {
+                <tbody>
+                    <tr>
+                        <th scope="row">@item.Name</th>
+                        <th scope="row">@item.ID</th>
+                        <th scope="row">@item.Email</th>
+                    </tr>
+                </tbody>
+            }
+        </table>
+    </div>
+</div>
+
